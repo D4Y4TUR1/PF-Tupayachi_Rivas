@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>José Madero</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
+
+
+</head>
+
+<body>
+<!--HEADER-->
+    <header>
+        <section>
+            <div>
+                <h1>José Madero</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="../pages/discografia.html">DISCOGRAFÍA</a>
+                    </li>
+                    <li>
+                        <a href="../pages/giras.html">GIRAS</a>
+                    </li>
+                    <li>
+                        <a href="../pages/libros.html">LIBROS</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+<!--CIERRE HEADER-->
+
+<!-- MAIN-->
+    <main>
+        <div>
+            <h1>
+                Contacto
+            </h1>
+        </div>
+        <section id="contacto" class="content4">
+            <div class="content4__centrar">
+                <h1>Contactame para trabajar juntos!</h1>
+                <p class="contacto_parrafo">Tu opinión es invaluable para nosotros. Queremos conocerte mejor y escuchar tus pensamientos sobre lo que te gusta y lo que te gustaría ver en nuestro contenido. Siempre estamos abiertos a sugerencias y cambios que puedan hacer que tu experiencia sea aún más satisfactoria. Tu voz es fundamental y nos importa profundamente lo que tienes que decir.</p>
+            </div>
+
+            <form action='/indexenviado/index' method='POST' name='contacto'>
+                <input type='hidden' name='form-name' value='contacto' />
+                <fieldset class="formulario">
+                    <div class="contacto_seccion">
+                        <label class="contacto_label" for="Nombre">Nombre</label>
+                        <input class="formulario__estilo" type="text" name="Nombre" required="" placeholder="Nombre">
+                    </div>
+
+                    <div class="contacto_seccion">
+                        <label class="contacto_label" for="Apellido">Apellido</label>
+                        <input class="formulario__estilo" type="text" name="Apellido" required="" placeholder="Apellido">
+                    </div>
+
+                    <div class="contacto_seccion">
+                        <label class="contacto_label" for="Email">Correo    </label>   
+                        <input class="formulario__estilo" type="email" name="Email" required="" placeholder="Email">
+                    </div>
+
+                    <div class="contacto_seccion">
+                        <label class="contacto_label" for="Nombre">Teléfono</label>
+                        <input class="formulario__estilo" type="tel" name="Celular" required="" placeholder="Numero de telefono">
+                    </div>
+                    <label class="contacto_label" for="opinion">Su opinión</label>
+
+                    <div class="contacto_seccion">
+                            <textarea class="formulario__textarea" name="msg" placeholder="Ingrese su propuesta"></textarea>
+                    </div>
+
+                        <div class="formulario_posicion_boton">
+                            <input class="formulario_boton" type="submit" value="Enviar">
+                        </div>
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+<!--CIERRE MAIN-->
+
+<!--FOOTER-->
+    <footer>
+        <section>
+            <div>
+                <p>© 2023 David Tupayachi</p>
+                <p>Página sin fines de lucro</p>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCjPjjy58fi0kKEQXRM53qKQ" target="_blank">
+                            <img src="../img/footer/youtube.png" alt="ico-youtube" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/maderovizcainojose/?locale=es_LA" target="_blank">
+                            <img src="../img/footer/facebook.png" alt="ico-facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/jose_madero?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                            <img src="../img/footer/twitter.png" alt="ico-twitter" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/jose_madero/?hl=es-la" target="_blank">
+                            <img src="../img/footer/instagram.png" alt="ico-instagram" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@josemaderov" target="_blank">
+                            <img src="../img/footer/tiktok.png" alt="ico-tiktok">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+<!--CIERRE FOOTER-->
+</body>
+
+</html>
