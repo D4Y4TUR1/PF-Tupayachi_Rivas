@@ -18,7 +18,9 @@
             <div>
                 <h1>José Madero</h1>
             </div>
-            
+        </section>
+
+        <section>    
             <nav>
                 <ul>
                     <li>
@@ -43,19 +45,18 @@
 <!--CIERRE HEADER-->
 
 <!-- MAIN-->
-    <main>
-        <div>
-            <h1>
-                Contacto
-            </h1>
-        </div>
-        <section id="contacto" class="content4">
-            <div class="content4__centrar">
-                <h1>Contactame para trabajar juntos!</h1>
+    <main id="main__contacto">
+        <section>
+            <div>
+                <h1 class="titulos">Contacto</h1>
+                <h2>Contactame para trabajar juntos!</h2>
                 <p class="contacto_parrafo">Tu opinión es invaluable para nosotros. Queremos conocerte mejor y escuchar tus pensamientos sobre lo que te gusta y lo que te gustaría ver en nuestro contenido. Siempre estamos abiertos a sugerencias y cambios que puedan hacer que tu experiencia sea aún más satisfactoria. Tu voz es fundamental y nos importa profundamente lo que tienes que decir.</p>
             </div>
+        </section>
 
-            <form action='/indexenviado/index' method='POST' name='contacto'>
+        <section>
+
+            <form id="formulario_centrarFlex" action='/indexenviado/index' method='POST' name='contacto'>
                 <input type='hidden' name='form-name' value='contacto' />
                 <fieldset class="formulario">
                     <div class="contacto_seccion">
@@ -94,43 +95,37 @@
 <!--CIERRE MAIN-->
 
 <!--FOOTER-->
-    <footer>
-        <section>
-            <div>
-                <p>© 2023 David Tupayachi</p>
-                <p>Página sin fines de lucro</p>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCjPjjy58fi0kKEQXRM53qKQ" target="_blank">
-                            <img src="../img/footer/youtube.png" alt="ico-youtube" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/maderovizcainojose/?locale=es_LA" target="_blank">
-                            <img src="../img/footer/facebook.png" alt="ico-facebook" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/jose_madero?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                            <img src="../img/footer/twitter.png" alt="ico-twitter" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/jose_madero/?hl=es-la" target="_blank">
-                            <img src="../img/footer/instagram.png" alt="ico-instagram" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/@josemaderov" target="_blank">
-                            <img src="../img/footer/tiktok.png" alt="ico-tiktok">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-    </footer>
+<footer>
+    <section>
+        <div >
+            <p>© 2023 David Tupayachi</p>
+            <p>Página sin fines de lucro</p>
+        </div>
+    </section>
+    <section>
+        <div id="img_link_externos">
+            <a href="https://www.youtube.com/channel/UCjPjjy58fi0kKEQXRM53qKQ" target="_blank">
+                <img src="../img/footer/youtube.png" alt="ico-youtube" />
+            </a>
+
+            <a href="https://www.facebook.com/maderovizcainojose/?locale=es_LA" target="_blank">
+                <img src="../img/footer/facebook.png" alt="ico-facebook" />
+            </a>
+
+            <a href="https://twitter.com/jose_madero?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                <img src="../img/footer/twitter.png" alt="ico-twitter" />
+            </a>
+
+            <a href="https://www.instagram.com/jose_madero/?hl=es-la" target="_blank">
+                <img src="../img/footer/instagram.png" alt="ico-instagram" />
+            </a>
+
+            <a href="https://www.tiktok.com/@josemaderov" target="_blank">
+                <img src="../img/footer/tiktok.png" alt="ico-tiktok">
+            </a>
+        </div>
+    </section>
+</footer>
 <!--CIERRE FOOTER-->
 </body>
 
