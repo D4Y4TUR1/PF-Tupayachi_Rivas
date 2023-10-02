@@ -79,7 +79,10 @@ main section div h1, p{
     text-align: left    ;
     color:antiquewhite;
 }
-
+.home_img_p{
+    width: 350px;
+    right: 300px;
+}
 .home_img_principal{
     width: 350px;
     right: 300px;
