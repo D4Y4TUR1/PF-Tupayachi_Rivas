@@ -83,6 +83,8 @@ main section div h1, p{
 .home_img_principal{
     width: 350px;
     right: 300px;
+    border: 2px solid white;
+    border-radius: 10px;
 
 }
 
