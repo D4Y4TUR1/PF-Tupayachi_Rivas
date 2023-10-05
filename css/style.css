@@ -177,6 +177,14 @@ footer a{
 /* Cierre Main_Discografia */
 
 /* Main_Giras */
+#contenedor__giras__portada{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+}
+
 .giras_portada{
     width: auto;
     height: 450px;
