@@ -65,7 +65,7 @@ h2 {
 }
 /*HEADER*/
 header {
-  background-image: url(../img/backgorund-marroncito.jpg);
+  background-image: url(../img/background-header-footer-textura-cafe.webp);
   color: white;
   position: fixed;
   width: 100%;
@@ -103,14 +103,14 @@ header section nav ul a {
 /*CIERRE HEADER*/
 /*Main general*/
 main {
-  background-image: url(../img/bakcground-dark.jpg);
+  background-image: url(../img/bakcground-main-dark.webp);
   width: 100%;
 }
 
 /*CIERRE main general*/
 /*FOOTER*/
 footer {
-  background-image: url(../img/backgorund-marroncito.jpg);
+  background-image: url(../img/background-header-footer-textura-cafe.webp);
   padding: 10px;
   width: auto;
 }
@@ -135,8 +135,8 @@ footer section #img_link_externos a {
 }
 #index_home #main__section__home div #home_img_p {
   padding: 10px;
-  width: 350px;
-  right: 300px;
+  width: 700px;
+  right: auto;
 }
 
 /*CIERRE Main home*/
@@ -195,7 +195,7 @@ footer section #img_link_externos a {
 #main__giras section div .giras_img_generales {
   margin: 10px;
   width: 450px;
-  height: 250px;
+  height: 300px;
   border: 2px solid #7f540f;
   border-radius: 10px;
 }
