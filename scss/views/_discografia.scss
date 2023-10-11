@@ -1,0 +1,40 @@
+/* Main_Discografia */
+#main__discografia{
+    padding: 100px 0px 5px 0px;
+    #main__section__discografia{
+        @extend %flex-colum-center;
+        div{
+            .discografia_parrafo{
+                color: map-get($colores , texto_principal );
+                font-size: 20px;
+                padding: 10px;
+                width: auto;
+            }
+            #discrografia__iframes__solista{
+                display: grid;
+                grid-template-rows: 250px 250px;
+                grid-template-columns: repeat(3, 1fr);
+                justify-content: center;
+                align-content: center;
+                .discografia_iframe{
+                    padding: 10px;
+                }
+                
+            }
+            #discrografia__iframes__colab{
+                padding: 5px;
+                display: grid;
+                grid-template-rows: 200px 200px;
+                grid-template-columns: repeat(3, 1fr);
+                justify-content: center;
+                align-content: center;
+                justify-items: center;
+                align-items: center;    
+            
+            }
+        }
+    
+    }
+}
+
+/* Cierre Main_Discografia */

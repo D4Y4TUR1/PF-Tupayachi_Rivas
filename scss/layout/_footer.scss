@@ -1,0 +1,25 @@
+/*FOOTER*/
+footer{
+    background-image: url(../img/backgorund-marroncito.jpg);
+    padding: 10px;
+    width: auto;
+    @extend %flex-row-space-evenly-center;
+    section{
+        div{
+            padding: 5px 5px;
+            p{
+                color: map-get($colores , texto_header );
+                padding: 5px;
+            
+            }
+        }
+        #img_link_externos{
+            @extend %flex-row-space-evenly-center;
+            a{
+                padding: 5px;
+            }
+        }
+    }
+    
+}
+/*CIERRE FOOTER*/

@@ -1,0 +1,37 @@
+/* Main_Giras */
+#main__giras{
+    section{
+        #contenedor__giras__portada{
+            @extend %flex-row-center;
+            height: auto;
+            #giras_portada{
+                width: auto;
+                height: 450px;
+                position: relative;
+                top: -50px;
+            }
+        }
+        div{
+            .giras_parrafo{
+                color: map-get($colores , texto_principal );
+                font-size: 20px;
+                padding: 10px;
+                width: auto;
+            }
+            .contenedor__img__generales{
+                padding: 10px;
+                @extend %flex-center;
+                height: auto; 
+            }
+            .giras_img_generales{
+                margin: 10px;
+                width: 450px;
+                height: 250px;
+                border: 2px solid map-get($colores , borde_img );
+                border-radius: 10px;
+            }
+            
+        }
+    }
+}
+/* Cierre Main_Giras */

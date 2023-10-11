@@ -1,0 +1,45 @@
+/* Main_Contacto */
+#main__contacto{
+    padding-top: 100px;
+    @extend %flex-colum-space-evenly-center;
+    section{
+        div{
+            .contacto_parrafo{
+                color: map-get($colores , texto_principal );
+                font-size: 20px;
+                padding: 10px 10px 40px 10px;
+                width: auto;
+            }
+        }
+        #formulario_centrarFlex{
+            @extend %flex-row-space-evenly-center;
+            .formulario{
+                width: auto;
+                margin: 40px;
+                padding: 20px;
+                .contacto_seccion{
+                    padding: 10px;
+                    .contacto_label{
+                        color: map-get($colores , texto_principal );
+                        padding: 20px 20px;
+                    }
+                    .formulario__estilo{
+                        margin: 10px;
+                        padding: 10px;
+                    }
+                    .formulario__textarea{
+                        padding: 10px 100px;
+                    }
+                }
+                .formulario_posicion_boton{
+                    .formulario_boton{
+                        padding: 10px 15px;
+                        margin-left: 300px;
+                        }
+                }
+            }
+            
+        }
+    }
+}
+/* Cierre Main_Contacto */

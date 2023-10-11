@@ -1,0 +1,53 @@
+/* Main_Libros */
+#main_libros{
+    padding: 100px 0px;
+    #main__section__libros{
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 600px 600px 600px;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: end;
+        justify-items: center;
+        align-items: center;
+        .contenedor__img__libros{
+            padding: 10px;
+            @extend %flex-colum-center;
+            height: auto;
+            .libros_img{
+                margin: 5px;
+                width: 350px;
+                height: 250px;
+                border: 2px solid map-get($colores , borde_img );
+                border-radius: 10px;
+            }
+        }   
+    }
+    section{
+        div{
+            .titulo3{
+                color: map-get($colores , texto_principal );
+                font-size: 22px;
+                padding: 5px;
+            }
+            .libros_parrafo{
+                color: map-get($colores , texto_principal );
+                font-size: 20px;
+                padding: 10px 10px 40px 10px;
+                width: auto;
+            }
+        }
+        #entrevistas__iframe__centrar{
+            padding: 5px;
+            display: grid;
+            grid-template-rows: 200px 200px;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;    
+        }
+    }
+}
+
+/* Cierre Libros */

@@ -1,427 +1,372 @@
+#main__giras section div .contenedor__img__generales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main__contacto section #formulario_centrarFlex, footer section #img_link_externos, footer, header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#main__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#main__giras section #contenedor__giras__portada, #index_home #main__section__home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_libros #main__section__libros .contenedor__img__libros, #main__discografia #main__section__discografia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*GENERAL*/
-*{
-    margin: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                                        /*box-sizing: border-box;*/ 
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
 }
+
+p {
+  font-size: 18px;
+  padding: 20px 0px 20px;
+  width: 300px;
+}
+
+h1, p {
+  text-align: left;
+  color: white;
+}
+
+h2 {
+  font-size: 26px;
+  color: white;
+  padding: 25px 5px;
+  text-align: center;
+}
+
 /*CIERRE GENERAL*/
-
-@font-face { 
-    font-family: "Anthony Hunters"; 
-    src: url("../fonts/Anthony\ Hunters.otf"); 
+@font-face {
+  font-family: "Anthony Hunters";
+  src: url("../fonts/Anthony Hunters.otf");
 }
-
 /*HEADER*/
-header{
-    background-image: url(../img/backgorund-marroncito.jpg);
-    color:antiquewhite;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+header {
+  background-image: url(../img/backgorund-marroncito.jpg);
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 5px;
+}
+header section div h1 {
+  font-size: 34px;
+  font-family: "Anthony Hunters";
+  padding: 5px;
+  color: whitesmoke;
+}
+header section nav {
+  padding: 0px 5px;
+}
+header section nav ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 5px 5px;
+}
+header section nav ul li {
+  display: inline;
+}
+header section nav ul a {
+  text-decoration: none;
+  color: #faebd7;
+  font-size: 14px;
+  background-color: #b3754f;
+  padding: 5px;
+  border: 2px solid #faebd7;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
 }
 
-header section div h1{
-    font-size: 34px;
-    font-family: Anthony Hunters;
-    padding: 5px;
-
-}
-header nav{
-    padding: 0px 5px;
-}
-
-header nav ul{
-    list-style-type: none;
-    text-align: right;
-    padding: 5px 5px;
-}
-header nav ul li{
-    display: inline;
-}
-header nav ul a{
-    text-decoration: none;
-    color: antiquewhite;
-    font-size: 14px;
-    background-color: #b3754f;;
-    padding: 5px;
-    border: 2px solid antiquewhite;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px black;
-}
 /*CIERRE HEADER*/
-
-/*Main general y home*/
-main{
-    background-image: url(../img/bakcground-dark.jpg);
-    width: 100%;
-}
-#main__section__home{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.titulos{
-    padding-top: 100px;
-
-    font-size: 42px;
-    color: antiquewhite;
-    text-decoration-line:underline
-    
+/*Main general*/
+main {
+  background-image: url(../img/bakcground-dark.jpg);
+  width: 100%;
 }
 
-main section p{
-    font-size: 18px;
-    padding: 20px 0px 20px;
-    width: 300px;
-}
-
-main section div h1, p{
-    text-align: left    ;
-    color:antiquewhite;
-}
-
-#home_img_p{
-    padding: 10px;
-    width: 350px;
-    right: 300px;
-}
-
-main section div h2{
-    font-size: 26px;
-    color: antiquewhite;
-    padding: 25px 5px;
-    text-align: center;
-}
-/*CIERRE Main general y home*/
-
+/*CIERRE main general*/
 /*FOOTER*/
-footer{
-    background-image: url(../img/backgorund-marroncito.jpg);
-    padding: 10px;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+footer {
+  background-image: url(../img/backgorund-marroncito.jpg);
+  padding: 10px;
+  width: auto;
+}
+footer section div {
+  padding: 5px 5px;
+}
+footer section div p {
+  color: #faebd7;
+  padding: 5px;
+}
+footer section #img_link_externos a {
+  padding: 5px;
 }
 
-footer div{
-    padding: 5px 5px;
-}
-
-footer div p{
-    color: antiquewhite;
-    padding: 5px;
-
-}
-
-#img_link_externos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-footer a{
-    padding: 5px;
-}
 /*CIERRE FOOTER*/
+/*Main home*/
+#index_home #main__section__home div .titulos {
+  padding-top: 100px;
+  font-size: 42px;
+  color: white;
+  text-decoration-line: underline;
+}
+#index_home #main__section__home div #home_img_p {
+  padding: 10px;
+  width: 350px;
+  right: 300px;
+}
 
+/*CIERRE Main home*/
 /* Main_Discografia */
-#main__discografia{
-    padding: 100px 0px 5px 0px;
+#main__discografia {
+  padding: 100px 0px 5px 0px;
 }
-
-#main__section__discografia{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+#main__discografia #main__section__discografia div .discografia_parrafo {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  width: auto;
 }
-.discografia_parrafo{
-    color: antiquewhite;
-    font-size: 20px;
-    padding: 10px;
-    width: auto;
+#main__discografia #main__section__discografia div #discrografia__iframes__solista {
+  display: grid;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
 }
-#discrografia__iframes__solista{
-    display: grid;
-    grid-template-rows: 250px 250px;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-content: center;
+#main__discografia #main__section__discografia div #discrografia__iframes__solista .discografia_iframe {
+  padding: 10px;
 }
-.discografia_iframe{
-    padding: 10px;
-}
-
-#discrografia__iframes__colab{
-    padding: 5px;
-    display: grid;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;    
-
+#main__discografia #main__section__discografia div #discrografia__iframes__colab {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 /* Cierre Main_Discografia */
-
 /* Main_Giras */
-#contenedor__giras__portada{
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    align-items: center; 
-    height: auto; 
+#main__giras section #contenedor__giras__portada {
+  height: auto;
 }
-
-.giras_portada{
-    width: auto;
-    height: 450px;
-    position: relative;
-    top: -50px;
+#main__giras section #contenedor__giras__portada #giras_portada {
+  width: auto;
+  height: 450px;
+  position: relative;
+  top: -50px;
 }
-
-.giras_parrafo{
-    color: antiquewhite;
-    font-size: 20px;
-    padding: 10px;
-    width: auto;
+#main__giras section div .giras_parrafo {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  width: auto;
 }
-
-.contenedor__img__generales{
-    padding: 10px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: auto; 
+#main__giras section div .contenedor__img__generales {
+  padding: 10px;
+  height: auto;
 }
-
-.giras_img_generales{
-    margin: 10px;
-    width: 450px;
-    height: 250px;
-    border: 2px solid antiquewhite;
-    border-radius: 10px;
+#main__giras section div .giras_img_generales {
+  margin: 10px;
+  width: 450px;
+  height: 250px;
+  border: 2px solid #7f540f;
+  border-radius: 10px;
 }
 
 /* Cierre Main_Giras */
-
 /* Main_Libros */
-#main_libros{
-    padding: 100px 0px;
+#main_libros {
+  padding: 100px 0px;
+}
+#main_libros #main__section__libros {
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 600px 600px 600px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: end;
+  justify-items: center;
+  align-items: center;
+}
+#main_libros #main__section__libros .contenedor__img__libros {
+  padding: 10px;
+  height: auto;
+}
+#main_libros #main__section__libros .contenedor__img__libros .libros_img {
+  margin: 5px;
+  width: 350px;
+  height: 250px;
+  border: 2px solid #7f540f;
+  border-radius: 10px;
+}
+#main_libros section div .titulo3 {
+  color: white;
+  font-size: 22px;
+  padding: 5px;
+}
+#main_libros section div .libros_parrafo {
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px 40px 10px;
+  width: auto;
+}
+#main_libros section #entrevistas__iframe__centrar {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
-#main__section__libros{
-    padding: 10px;
-    display: grid;
-    grid-template-rows: 600px 600px 600px;
-    grid-template-columns: 1fr 1fr;
+/* Cierre Libros */
+/* Main_Contacto */
+#main__contacto {
+  padding-top: 100px;
+}
+#main__contacto section div .contacto_parrafo {
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px 40px 10px;
+  width: auto;
+}
+#main__contacto section #formulario_centrarFlex .formulario {
+  width: auto;
+  margin: 40px;
+  padding: 20px;
+}
+#main__contacto section #formulario_centrarFlex .formulario .contacto_seccion {
+  padding: 10px;
+}
+#main__contacto section #formulario_centrarFlex .formulario .contacto_seccion .contacto_label {
+  color: white;
+  padding: 20px 20px;
+}
+#main__contacto section #formulario_centrarFlex .formulario .contacto_seccion .formulario__estilo {
+  margin: 10px;
+  padding: 10px;
+}
+#main__contacto section #formulario_centrarFlex .formulario .contacto_seccion .formulario__textarea {
+  padding: 10px 100px;
+}
+#main__contacto section #formulario_centrarFlex .formulario .formulario_posicion_boton .formulario_boton {
+  padding: 10px 15px;
+  margin-left: 300px;
+}
+
+/* Cierre Main_Contacto */
+/*RESPONSIVE PARA PAGINAS INDEX(Home) y Libros*/
+/*Movil index(Home)*/
+@media (min-width: 320px) and (max-width: 480px) {
+  #main__section__home {
+    flex-direction: column;
     justify-content: center;
-    align-content: end;
-    justify-items: center;
-    align-items: center; 
-
+    align-items: center;
+  }
+  #home_img_p {
+    padding: 10px;
+    width: 300px;
+    right: auto;
+  }
+  main section p {
+    font-size: 16px;
+    padding: 20px 0px 20px;
+    width: 200px;
+  }
 }
-
-#entrevistas__iframe__centrar{
-    padding: 5px;
-    display: grid;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 481px) and (max-width: 672px) {
+  #main__section__home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*extra page libros*/
+@media (min-width: 481px) and (max-width: 672px) {
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #main__section__libros {
+    grid-template-rows: 500px 500px 500px;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
     justify-items: center;
-    align-items: center;    
+    align-items: center;
+  }
+  #entrevistas__iframe__centrar {
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
 }
-.titulo3{
-    color: antiquewhite;
-    font-size: 22px;
-    padding: 5px;
-}
-
-.libros_parrafo{
-    color: antiquewhite;
-    font-size: 20px;
-    padding: 10px 10px 40px 10px;
-    width: auto;
-}
-.contenedor__img__libros{
-    padding: 10px;
-    display: flex;
+/*Movil page libros*/
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: auto; 
-}
-
-.libros_img{
-    margin: 5px;
-    width: 350px;
-    height: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header nav ul a {
+    font-size: 12px;
+    padding: 1.5px;
+  }
+  #main__section__libros {
+    grid-template-rows: 500px 500px 500px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  #entrevistas__iframe__centrar {
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .libros_img {
+    width: 300px;
+    height: 200px;
     border: 2px solid antiquewhite;
     border-radius: 10px;
-}
-/* Cierre Libros */
-
-/* Main_Contacto */
-#main__contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  }
 }
 
-.contacto_label{
-    color: antiquewhite;
-    padding: 20px 20px;
-}
-
-#formulario_centrarFlex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-.formulario__estilo{
-    margin: 10px;
-    padding: 10px;
-}
-
-.formulario__textarea{
-    padding: 10px 100px;
-}
-.formulario_boton{
-padding: 10px 15px;
-margin-left: 300px;
-}
-.contacto_parrafo{
-    color: antiquewhite;
-    font-size: 20px;
-    padding: 10px 10px 40px 10px;
-    width: auto;
-}
-
-.formulario{
-    width: auto;
-    margin: 40px;
-    padding: 20px;
-}
-
-.contacto_seccion{
-    padding: 10px;
-}
-/* Cierre Main_Contacto */
-
-
-/*RESPONSIVE PARA PAGINAS INDEX(Home) y Libros*/
-
-
-/*Movil index(Home)*/
-@media (min-width: 320px) and (max-width:480px){
-    #main__section__home{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #home_img_p{
-        padding: 10px;
-        width: 300px;
-        right: auto;
-    }
-
-    main section p{
-        font-size: 16px;
-        padding: 20px 0px 20px;
-        width: 200px;
-    }
-}
-
-@media (min-width: 481px) and (max-width:672px){
-    #main__section__home{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
-
-/*extra page libros*/
-@media (min-width: 481px) and (max-width:672px){
-    header{
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    #main__section__libros{
-        grid-template-rows: 500px 500px 500px;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center; 
-    
-    }
-
-    #entrevistas__iframe__centrar{
-        grid-template-rows: 200px 200px;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;  
-    }
-    
-}
-
-/*Movil page libros*/
-@media (min-width: 320px) and (max-width:480px){
-    header{
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    header nav ul a{
-        font-size: 12px;
-        padding: 1.5px;
-    }
-
-    #main__section__libros{
-        grid-template-rows: 500px 500px 500px;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center; 
-    }
-
-    #entrevistas__iframe__centrar{
-        grid-template-rows: 200px 200px;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;  
-    }
-
-    .libros_img{
-        width: 300px;
-        height: 200px;
-        border: 2px solid antiquewhite;
-        border-radius: 10px;
-    }
-}
+/*# sourceMappingURL=style.css.map */
