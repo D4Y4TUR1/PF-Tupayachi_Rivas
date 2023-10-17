@@ -5,13 +5,13 @@
             @extend %flex-row-center;
             height: auto;
             #giras_portada{
-                width: auto;
+                width: 100%;
                 height: 450px;
                 position: relative;
                 top: -50px;
             }
         }
-        div{
+        .container{
             .giras_parrafo{
                 color: map-get($colores , texto_principal );
                 font-size: 20px;
@@ -21,11 +21,12 @@
             .contenedor__img__generales{
                 padding: 10px;
                 @extend %flex-center;
-                height: auto; 
+                height: auto;
+                flex-wrap: wrap; 
             }
             .giras_img_generales{
                 margin: 10px;
-                width: 450px;
+                width: 100%;
                 height: 300px;
                 border: 2px solid map-get($colores , borde_img );
                 border-radius: 10px;

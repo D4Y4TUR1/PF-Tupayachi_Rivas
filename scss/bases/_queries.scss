@@ -1,0 +1,140 @@
+/*RESPONSIVE PARA PAGINAS INDEX(Home) y Libros*/
+
+
+/*Movil index(Home)*/
+@media (min-width: 320px) and (max-width:480px){
+    header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        section{
+            nav{
+                ul{
+                    a{
+                        font-size: 12px;
+                        padding: 0.9px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    #index_home{
+        #main__section__home{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                #home_img_p{
+                    padding: 10px;
+                    width: 100%;
+                    right: auto;
+                }
+                p{
+                    font-size: 16px;
+                    padding: 20px 0px 20px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width:625px){
+    #index_home{
+        #main__section__home{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+/*extra page libros*/
+@media (min-width: 481px) and (max-width:672px){
+    header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #main_libros{
+        #main__section__libros{
+            grid-template-rows: 500px 500px 500px;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center; 
+        }
+        section{
+            #entrevistas__iframe__centrar{
+                grid-template-rows: 200px 200px;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-content: center;
+                justify-items: center;
+                align-items: center;  
+            }
+        }
+    }   
+}
+
+/*Movil page libros*/
+@media (min-width: 320px) and (max-width:480px){
+    header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        section{
+            nav{
+                ul{
+                    a{
+                        font-size: 12px;
+                        padding: 0.9px;
+                    }
+                }
+            }
+        }
+    }
+    #main_libros{
+        #main__section__libros{
+            grid-template-rows: 650px 600px 480px;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+            .contenedor__img__libros{
+                .libros_img{
+                    width: 280px;
+                    height: auto;
+                    border: 2px solid antiquewhite;
+                    border-radius: 10px;
+                }
+            }
+        }
+        section{
+            #entrevistas__iframe__centrar{
+                grid-template-rows: 200px 200px;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-content: center;
+                justify-items: center;
+                align-items: center;  
+            }
+        }
+    }
+}

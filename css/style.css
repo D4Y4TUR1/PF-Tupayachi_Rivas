@@ -1,4 +1,4 @@
-#main__giras section div .contenedor__img__generales {
+#main__giras section .container .contenedor__img__generales {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@
 
 p {
   font-size: 18px;
-  padding: 20px 0px 20px;
+  padding: 15px;
   width: 300px;
 }
 
@@ -112,7 +112,7 @@ main {
 footer {
   background-image: url(../img/background-header-footer-textura-cafe.webp);
   padding: 10px;
-  width: auto;
+  width: 100%;
 }
 footer section div {
   padding: 5px 5px;
@@ -135,7 +135,7 @@ footer section #img_link_externos a {
 }
 #index_home #main__section__home div #home_img_p {
   padding: 10px;
-  width: 700px;
+  width: 320px;
   right: auto;
 }
 
@@ -144,23 +144,23 @@ footer section #img_link_externos a {
 #main__discografia {
   padding: 100px 0px 5px 0px;
 }
-#main__discografia #main__section__discografia div .discografia_parrafo {
+#main__discografia #main__section__discografia .container .discografia_parrafo {
   color: white;
   font-size: 20px;
   padding: 10px;
   width: auto;
 }
-#main__discografia #main__section__discografia div #discrografia__iframes__solista {
+#main__discografia #main__section__discografia .container #discrografia__iframes__solista {
   display: grid;
   grid-template-rows: 250px 250px;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-content: center;
 }
-#main__discografia #main__section__discografia div #discrografia__iframes__solista .discografia_iframe {
+#main__discografia #main__section__discografia .container #discrografia__iframes__solista .discografia_iframe {
   padding: 10px;
 }
-#main__discografia #main__section__discografia div #discrografia__iframes__colab {
+#main__discografia #main__section__discografia .container #discrografia__iframes__colab {
   padding: 5px;
   display: grid;
   grid-template-rows: 200px 200px;
@@ -177,24 +177,25 @@ footer section #img_link_externos a {
   height: auto;
 }
 #main__giras section #contenedor__giras__portada #giras_portada {
-  width: auto;
+  width: 100%;
   height: 450px;
   position: relative;
   top: -50px;
 }
-#main__giras section div .giras_parrafo {
+#main__giras section .container .giras_parrafo {
   color: white;
   font-size: 20px;
   padding: 10px;
   width: auto;
 }
-#main__giras section div .contenedor__img__generales {
+#main__giras section .container .contenedor__img__generales {
   padding: 10px;
   height: auto;
+  flex-wrap: wrap;
 }
-#main__giras section div .giras_img_generales {
+#main__giras section .container .giras_img_generales {
   margin: 10px;
-  width: 450px;
+  width: 100%;
   height: 300px;
   border: 2px solid #7f540f;
   border-radius: 10px;
@@ -280,33 +281,53 @@ footer section #img_link_externos a {
 }
 #main__contacto section #formulario_centrarFlex .formulario .formulario_posicion_boton .formulario_boton {
   padding: 10px 15px;
-  margin-left: 300px;
 }
 
 /* Cierre Main_Contacto */
 /*RESPONSIVE PARA PAGINAS INDEX(Home) y Libros*/
 /*Movil index(Home)*/
 @media (min-width: 320px) and (max-width: 480px) {
-  #main__section__home {
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header section nav ul a {
+    font-size: 12px;
+    padding: 0.9px;
+  }
+  #index_home #main__section__home {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  #home_img_p {
+  #index_home #main__section__home div #home_img_p {
     padding: 10px;
-    width: 300px;
+    width: 100%;
     right: auto;
   }
-  main section p {
+  #index_home #main__section__home div p {
     font-size: 16px;
     padding: 20px 0px 20px;
     width: 200px;
   }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
-@media (min-width: 481px) and (max-width: 672px) {
-  #main__section__home {
+@media (min-width: 481px) and (max-width: 625px) {
+  #index_home #main__section__home {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
@@ -317,7 +338,7 @@ footer section #img_link_externos a {
     justify-content: space-evenly;
     align-items: center;
   }
-  #main__section__libros {
+  #main_libros #main__section__libros {
     grid-template-rows: 500px 500px 500px;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -325,7 +346,7 @@ footer section #img_link_externos a {
     justify-items: center;
     align-items: center;
   }
-  #entrevistas__iframe__centrar {
+  #main_libros section #entrevistas__iframe__centrar {
     grid-template-rows: 200px 200px;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -341,31 +362,31 @@ footer section #img_link_externos a {
     justify-content: space-evenly;
     align-items: center;
   }
-  header nav ul a {
+  header section nav ul a {
     font-size: 12px;
-    padding: 1.5px;
+    padding: 0.9px;
   }
-  #main__section__libros {
-    grid-template-rows: 500px 500px 500px;
+  #main_libros #main__section__libros {
+    grid-template-rows: 650px 600px 480px;
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
   }
-  #entrevistas__iframe__centrar {
+  #main_libros #main__section__libros .contenedor__img__libros .libros_img {
+    width: 280px;
+    height: auto;
+    border: 2px solid antiquewhite;
+    border-radius: 10px;
+  }
+  #main_libros section #entrevistas__iframe__centrar {
     grid-template-rows: 200px 200px;
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
-  }
-  .libros_img {
-    width: 300px;
-    height: 200px;
-    border: 2px solid antiquewhite;
-    border-radius: 10px;
   }
 }
 
