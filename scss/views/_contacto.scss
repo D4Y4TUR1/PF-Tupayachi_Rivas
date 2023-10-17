@@ -1,39 +1,45 @@
 /* Main_Contacto */
 #main__contacto{
-    padding-top: 100px;
+    padding-top: 120px;
+    padding-bottom: 20px;
     @extend %flex-colum-space-evenly-center;
     section{
-        div{
+        .container{
+            .titulos{
+                font-size: 42px;
+                color: map-get($colores , texto_principal );
+                text-decoration-line:underline            
+            } 
+
             .contacto_parrafo{
                 color: map-get($colores , texto_principal );
                 font-size: 20px;
-                padding: 10px 10px 40px 10px;
+                padding: 10px;
                 width: auto;
             }
         }
         #formulario_centrarFlex{
             @extend %flex-row-space-evenly-center;
+            border: 2px solid #ffffff;
             .formulario{
                 width: auto;
-                margin: 40px;
                 padding: 20px;
                 .contacto_seccion{
                     padding: 10px;
                     .contacto_label{
                         color: map-get($colores , texto_principal );
-                        padding: 20px 20px;
+                        padding: 10px;
                     }
                     .formulario__estilo{
-                        margin: 10px;
                         padding: 10px;
                     }
                     .formulario__textarea{
-                        padding: 10px 100px;
+                        padding: 10px;
                     }
                 }
                 .formulario_posicion_boton{
                     .formulario_boton{
-                        padding: 10px 15px;
+                        padding: 10px;
                         }
                 }
             }

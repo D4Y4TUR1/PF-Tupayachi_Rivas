@@ -135,14 +135,19 @@ footer section #img_link_externos a {
 }
 #index_home #main__section__home div #home_img_p {
   padding: 10px;
-  width: 320px;
+  width: 100%;
   right: auto;
 }
 
 /*CIERRE Main home*/
 /* Main_Discografia */
 #main__discografia {
-  padding: 100px 0px 5px 0px;
+  padding: 120px 0px 5px 0px;
+}
+#main__discografia #main__section__discografia .container .titulos {
+  font-size: 42px;
+  color: white;
+  text-decoration-line: underline;
 }
 #main__discografia #main__section__discografia .container .discografia_parrafo {
   color: white;
@@ -182,6 +187,11 @@ footer section #img_link_externos a {
   position: relative;
   top: -50px;
 }
+#main__giras section .container .titulos {
+  font-size: 42px;
+  color: white;
+  text-decoration-line: underline;
+}
 #main__giras section .container .giras_parrafo {
   color: white;
   font-size: 20px;
@@ -204,7 +214,12 @@ footer section #img_link_externos a {
 /* Cierre Main_Giras */
 /* Main_Libros */
 #main_libros {
-  padding: 100px 0px;
+  padding: 120px 20px;
+}
+#main_libros .titulos {
+  font-size: 42px;
+  color: white;
+  text-decoration-line: underline;
 }
 #main_libros #main__section__libros {
   padding: 10px;
@@ -252,17 +267,25 @@ footer section #img_link_externos a {
 /* Cierre Libros */
 /* Main_Contacto */
 #main__contacto {
-  padding-top: 100px;
+  padding-top: 120px;
+  padding-bottom: 20px;
 }
-#main__contacto section div .contacto_parrafo {
+#main__contacto section .container .titulos {
+  font-size: 42px;
+  color: white;
+  text-decoration-line: underline;
+}
+#main__contacto section .container .contacto_parrafo {
   color: white;
   font-size: 20px;
-  padding: 10px 10px 40px 10px;
+  padding: 10px;
   width: auto;
+}
+#main__contacto section #formulario_centrarFlex {
+  border: 2px solid #ffffff;
 }
 #main__contacto section #formulario_centrarFlex .formulario {
   width: auto;
-  margin: 40px;
   padding: 20px;
 }
 #main__contacto section #formulario_centrarFlex .formulario .contacto_seccion {
@@ -270,17 +293,16 @@ footer section #img_link_externos a {
 }
 #main__contacto section #formulario_centrarFlex .formulario .contacto_seccion .contacto_label {
   color: white;
-  padding: 20px 20px;
+  padding: 10px;
 }
 #main__contacto section #formulario_centrarFlex .formulario .contacto_seccion .formulario__estilo {
-  margin: 10px;
   padding: 10px;
 }
 #main__contacto section #formulario_centrarFlex .formulario .contacto_seccion .formulario__textarea {
-  padding: 10px 100px;
+  padding: 10px;
 }
 #main__contacto section #formulario_centrarFlex .formulario .formulario_posicion_boton .formulario_boton {
-  padding: 10px 15px;
+  padding: 10px;
 }
 
 /* Cierre Main_Contacto */

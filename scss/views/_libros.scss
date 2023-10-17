@@ -1,6 +1,11 @@
 /* Main_Libros */
 #main_libros{
-    padding: 100px 0px;
+    padding: 120px 20px;
+    .titulos{
+        font-size: 42px;
+        color: map-get($colores , texto_principal );
+        text-decoration-line:underline            
+    } 
     #main__section__libros{
         padding: 10px;
         display: grid;
@@ -21,7 +26,7 @@
                 border: 2px solid map-get($colores , borde_img );
                 border-radius: 10px;
             }
-        }   
+        }
     }
     section{
         div{
