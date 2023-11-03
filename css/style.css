@@ -182,10 +182,8 @@ footer section #img_link_externos a {
   height: auto;
 }
 #main__giras section #contenedor__giras__portada #giras_portada {
-  width: 100%;
-  height: 450px;
-  position: relative;
-  top: -50px;
+  width: 90%;
+  padding-top: 70px;
 }
 #main__giras section .container .titulos {
   font-size: 42px;
@@ -205,8 +203,7 @@ footer section #img_link_externos a {
 }
 #main__giras section .container .giras_img_generales {
   margin: 10px;
-  width: 100%;
-  height: 300px;
+  width: 70%;
   border: 2px solid #7f540f;
   border-radius: 10px;
 }
@@ -283,6 +280,7 @@ footer section #img_link_externos a {
 }
 #main__contacto section #formulario_centrarFlex {
   border: 2px solid #ffffff;
+  background-color: rgba(144, 96, 18, 0.6352941176);
 }
 #main__contacto section #formulario_centrarFlex .formulario {
   width: auto;

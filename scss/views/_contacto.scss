@@ -21,6 +21,7 @@
         #formulario_centrarFlex{
             @extend %flex-row-space-evenly-center;
             border: 2px solid #ffffff;
+            background-color: map-get($colores , formulario );
             .formulario{
                 width: auto;
                 padding: 20px;
